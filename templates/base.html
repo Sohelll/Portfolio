@@ -8,10 +8,10 @@
   <title>My Portfolio</title>
 <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
 <link rel="stylesheet" href="{% static 'css/bootstrap1.css' %}">
-<link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.css' %}" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.css" />
 <link rel="stylesheet" href="{% static 'css/style1.css' %}">
 </head>
-<body>
+<body id="body1">
   
 <div class="container">
 
@@ -28,7 +28,7 @@
 <script src="{% static 'js/jquery.min.js' %}"></script>
 <script src="{% static 'js/popper.min.js' %}"></script>
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
-<script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.js' %}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.js"></script>
 <script>
     $('.port-item').click(function () {
         $('.collapse').collapse('hide');
@@ -38,7 +38,15 @@
         event.preventDefault();
         $(this).ekkoLightbox();
     });
+
 </script>
+
+<style>
+    #body1{
+        background-color: beige;
+    }
+</style>
 </body>
+
 
 </html>

@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'contact',
 ]
 
 MIDDLEWARE = [
@@ -122,3 +123,17 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'resume/static')
 ]
+
+
+# Media Folder Settings
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
+#Email config
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'shaikhsohel.011@gmail.com'
+EMAIL_HOST_PASSWORD = 'Hanif@123'
+EMAIL_USE_TLS = True
